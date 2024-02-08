@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours and Travels</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Tours and Travels</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact" onclick="showContactPopup()">Contact</a>
+    <a href="login.html">Login</a>
+    <a href="register.html">Register</a>
+</nav>
+<h2>Explore World with us</h2>
+
+<div class="container">
+    <div id="home">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('tajmahal.jpg');">
+                    <img src="tajmahal.jpg" alt="Tourist Place 1">
+                    <h2>Tajmahal</h2>
+                    <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan</p>
+                </div>
+                <div class="swiper-slide" style="background-image:url('charminar.jpg');">
+                    <img src="charminar.jpg" alt="Tourist Place 2">
+                    <h2>Charminar</h2>
+                    <p>It is a square shaped monument with four pillars, one on each side. The architectural design of Charminar is inspired from the Shia “tazias”. </p>
+                </div>
+                <div class="swiper-slide" style="background-image:url('redfort.jpg');">
+                    <img src="redfort.jpg" alt="Tourist Place 3">
+                    <h2>Red Fort</h2>
+                    <p>The Red Fort Complex was built as the palace fort of Shahjahanabad,the new capital of the fifth Mughal Emperor of India, Shah Jahan.</p>
+                </div>
+                <div class="swiper-slide" style="background-image:url('minar.jpg');">
+                    <img src="minar.jpg" alt="Tourist Place 4">
+                    <h2>Qutub Minar</h2>
+                    <p>One of the tallest minarets built in brick, the Qutub Minar stands tall at 72.5 metres. It is located in Mehrauli, South Delhi. It is also one of the tallest towers in a conical shape.</p>
+                </div>
+                <div class="swiper-slide" style="background-image:url('indiagate.jpg');">
+                    <img src="indiagate.jpg" alt="Tourist Place 5">
+                    <h2>India Gate</h2>
+                    <p>At the centre of New Delhi stands the 42 m high India Gate, an "Arc-de-Triomphe" like archway in the middle of a crossroad. Almost similar to its French counterpart, it commemorates the 70,000 Indian soldiers who lost their lives fighting for the British Army during the World War I.</p>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Add Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+
+    <div id="contact-popup">
+        <span class="close-btn" onclick="hideContactPopup()">X</span>
+        <p>Contact us at:</p>
+        <p>Email: example@example.com</p>
+        <p>Phone: 123 456 7890</p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
